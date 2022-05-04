@@ -1,0 +1,31 @@
+//
+//  Story.swift
+//  Storys
+//
+//  Created by Luciano Uchoa on 04/05/22.
+//
+
+
+
+import Foundation
+
+struct Story: Identifiable {
+    let id: Int
+    let title: String
+    let name: String
+    let description: String
+    let heroPicture: String
+}
+
+struct StoryList {
+    static let book = [
+        Story(id: 1,title:"A Lenda do Herói", name: "      A Lenda do Herói", description: "\n A jornada do Herói é uma estrutura de história que pode ser encontrada em vários contos populares, mitos e escrituras religiosas em todo o mundo.\n\n Na jornada do Herói, o herói é chamado para sair de sua casa e se aventurar em uma jornada difícil.\n\n Ele vai de um lugar familiar para um lugar desconhecido e perigoso. Depois de superar um grande desafio, ele retorna para casa com uma recompensa ou com um novo ponto de vista, algo que vá ajudar a sua comunidade.\n\n Várias Histórias modernas ainda seguem essa estrutura, desde Rei Leão até Star Wars.\n\n Usar a Lenda do Herói para organizar sua apresentação pode ajudar em explicar o que trouxe você a aquele ponto de vista que você quer compartilhar.", heroPicture: "monomyth1"),
+        Story(id: 2,title: "A Montanha", name: "      A Montanha", description: "\n A estrutura montanha é uma forma de mapear a tensão e o drama em uma história. É similar a jornada do Herói, porque nos ajudar a traçar quando certos eventos ocorrem em uma história.\n\n Sua diferença é que ela não tem necessariamente um final feliz.A primeira parte da história é dedicada a construção de cenário, e é seguida por uma série de pequenos desafios e ação crescente antes de uma conclusão climática.", heroPicture: "mountain-2"),
+        Story(id: 3,title: "Loops Alinhados", name: "     Loops Alinhados", description: "n Loops aninhados é uma técnica de contar histórias em que você coloca três ou mais narrativas umas nas outras.\n Você coloca sua história mais importante – o núcleo de sua mensagem – no centro e usa as histórias em torno dela para elaborar ou explicar esse princípio central. A primeira história que você começa é a última história que você termina, a segunda história que você começa é a penúltima, etc.\n\n Os loops aninhados funcionam um pouco como um amigo contando sobre uma pessoa sábia em sua vida, alguém que lhe ensinou uma lição importante.\n\n Os primeiros loops são a história do seu amigo, os segundos são a história da pessoa sábia. No centro está a lição importante.", heroPicture: "nestedloops2"),
+        Story(id: 4,title: "Minigráficos", name: "    Minigráficos", description: "\n Minigráficos são uma maneira de mapear estruturas de apresentação. A designer gráfica Nancy Duarte usa sparklines para analisar graficamente discursos famosos em seu livro Resonate. Ela argumenta que os melhores discursos são bem-sucedidos porque contrastam nosso mundo comum com um mundo ideal e aprimorado.\n\n Eles comparam o que é com o que poderia ser. Ao fazer isso, o apresentador chama a atenção para os problemas que temos em nossa sociedade, nossas vidas pessoais, nossos negócios.\n O apresentador cria e alimenta um desejo de mudança no público. É uma técnica altamente emocional que certamente motivará seu público a apoiá-lo.", heroPicture: "sparklines2"),
+        Story(id: 5,title: "In media res", name: "       In media res", description: "In medias res storytelling é quando você começa sua narrativa no calor da ação, antes de começar de novo para explicar como você chegou lá.\n\n Ao levar seu público diretamente para a parte mais emocionante de sua história, eles serão cativados desde o início e permanecerão envolvidos para descobrir o que acontece. Mas tenha cuidado – você não quer dar muita ação imediatamente.\n\n Tente sugerir algo bizarro ou inesperado – algo que precise de mais explicação. Dê ao seu público apenas informações suficientes para mantê-los fisgados, enquanto você volta e define o cenário de sua história.", heroPicture: "inmediasres"),
+        Story(id: 6,title: "Convergência de ideias", name: "      Convergência de ideias", description: "\n A convergência de ideias é uma estrutura de discurso que mostra ao público como diferentes vertentes de pensamento se uniram para formar um produto ou ideia. Pode ser usado para mostrar o nascimento de um movimento.\n\n Ou explique como uma única ideia foi a culminação de várias grandes mentes trabalhando em direção a um objetivo. A convergência de ideias é semelhante à estrutura de loops aninhados, mas em vez de enquadrar uma história com histórias complementares, pode mostrar como várias histórias igualmente importantes chegaram a uma única conclusão forte.", heroPicture: "coverging"),
+        Story(id: 7, title: "Falso Começo", name: "       Falso Começo", description: "\n Uma história de 'falso começo' é quando você começa a contar uma história aparentemente previsível, antes de interromper inesperadamente e recomeçar.\n\n Você atrai seu público para uma falsa sensação de segurança e depois os choca virando a mesa. Esse formato é ótimo para falar sobre um momento em que você falhou em algo e foi forçado a 'voltar ao início' e reavaliar.\n\n É ideal para falar sobre as coisas que você aprendeu com essa experiência. Ou a forma inovadora como você resolveu seu problema. Mas o melhor de tudo é que é um truque rápido de atenção que vai atrapalhar as expectativas do seu público e surpreendê-los a prestar mais atenção à sua mensagem.", heroPicture: "falsestart"),
+        Story(id: 8, title: "Pétalas", name: "       Pétalas", description: "\n A estrutura de pétalas é uma forma de organizar vários oradores ou histórias em torno de um conceito central. É útil se você tiver várias histórias desconexas que deseja contar ou coisas que deseja revelar – todas relacionadas a uma única mensagem.\n\n Você conta suas histórias uma a uma antes de retornar ao centro. As pétalas podem se sobrepor à medida que uma história introduz a próxima, mas cada uma deve ser uma narrativa completa em si mesma. Ao fazer isso, você pode tecer uma rica tapeçaria de evidências em torno de sua teoria central.\n\n Ou fortes impressões emocionais em torno de sua ideia. Ao mostrar ao seu público como todas essas histórias importantes estão relacionadas umas às outras, você os deixa sentindo a verdadeira importância e o peso de sua mensagem.", heroPicture: "petal")
+    ]
+}
